@@ -49,6 +49,7 @@ android {
 
 dependencies {
     // FirebaseUI for Firebase Realtime Database
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation 'com.firebaseui:firebase-ui-database:8.0.1'
     implementation 'androidx.appcompat:appcompat:1.4.1'
     implementation 'com.google.android.material:material:1.5.0'
@@ -101,6 +102,8 @@ dependencies {
     implementation 'com.squareup.retrofit2:converter-gson:2.5.0'
     implementation 'com.google.firebase:firebase-firestore'
     implementation 'com.nex3z:notification-badge:1.0.4'
+
+    implementation files('libs/acceptsdk-release.aar')
 
     def room_version = "2.5.0"
     implementation "androidx.room:room-ktx:$room_version"
