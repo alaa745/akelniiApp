@@ -153,7 +153,7 @@ public class CartFragment extends Fragment {
         basketTotal = basketTotal - discount;
         Log.d("discount" , String.valueOf(discount));
         Log.d("total" , String.valueOf(basketTotal));
-        totalPrice.setText(String.valueOf(basketTotal) + " EGP");
+        cartViewModel.getBasketTotal().setValue(basketTotal);
         return;
     }
     public void calcBasket(){
