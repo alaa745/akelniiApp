@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/nointernetfra">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/noInternet">
+
+        <ImageView
+            android:id="@+id/noInternetImage"
+            android:layout_width="wrap_content"
+            android:layout_height="300dp"
+            android:layout_marginTop="128dp"
+            android:src="@drawable/no_internet" />
+
+        <TextView
+            android:id="@+id/noText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/noInternetImage"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/muli_black"
+            android:text="NO INTERNET CONNECTION"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/checkInternet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/noText"
+            android:layout_centerHorizontal="true"
+            android:layout_marginHorizontal="64dp"
+            android:layout_marginVertical="32dp"
+            android:gravity="center"
+            android:text="Check Your Internet And Try Again"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#8E8787"
+            android:textSize="20sp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tryButton"
+            android:layout_below="@+id/checkInternet"
+            android:layout_centerHorizontal="true"
+            android:text="try again"
+            android:backgroundTint="@color/black"
+            app:cornerRadius="10dp"/>
+
+
+
+
+    </RelativeLayout>
+</RelativeLayout>
+

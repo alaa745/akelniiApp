@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/_155sdp"
+    android:layout_height="@dimen/_220sdp"
+    android:layout_margin="1dp"
+
+    android:orientation="horizontal">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardd"
+        android:layout_width="153dp"
+        android:layout_height="240dp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:backgroundTint="?attr/colorOnPrimary"
+        android:clickable="true"
+        app:cardCornerRadius="25dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.09"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck">
+
+        <ImageView
+            android:id="@+id/productImg"
+            android:layout_width="match_parent"
+            android:layout_height="135dp"
+            android:layout_marginTop="40dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/pizza" />
+
+        <TextView
+            android:id="@+id/productName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_80sdp"
+            android:fontFamily="sans-serif-light"
+            android:text="pepporini Pizza"
+            android:textColor="?attr/colorPrimary"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/productPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_50sdp"
+            android:fontFamily="sans-serif-medium"
+            android:textSize="16sp"
+            android:textColor="?attr/colorPrimary"
+            android:textStyle="bold" />
+
+
+
+        <Button
+            android:id="@+id/addBtn"
+            android:layout_width="75dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_75sdp"
+            android:backgroundTint="#FF5722"
+            android:text="+Add"
+            android:textColor="#FFFFFF"
+            app:cornerRadius="50dp" />
+
+
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

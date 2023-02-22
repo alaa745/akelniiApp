@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/background_intro"
+    android:layout_height="match_parent"
+    tools:context=".BeginFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:minHeight="?attr/actionBarSize"
+        app:titleTextColor="@color/white"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="@dimen/_24sdp"
+        android:layout_marginEnd="@dimen/_24sdp"
+        android:contentDescription="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.257"
+        app:layout_constraintWidth_percent="0.8"
+        app:srcCompat="@drawable/akelniilogo" />
+
+    <Button
+        android:id="@+id/logbtn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginTop="144dp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:backgroundTint="#FFFFFF"
+        android:fontFamily="@font/muli_black"
+        android:gravity="center"
+        android:text="login"
+        android:textColor="#E45022"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:cornerRadius="17dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.08"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo"
+        app:layout_constraintWidth_percent="0.8" />
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/log2"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_45sdp"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:textAlignment="center"
+        android:backgroundTint="#FFFFFF"
+        android:fontFamily="@font/muli_black"
+        android:gravity="center"
+        android:textColor="#E45022"
+        android:textStyle="bold"
+        app:cornerRadius="17dp"
+        app:layout_constraintBottom_toTopOf="@id/logbtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.09"
+        app:layout_constraintHorizontal_bias="0.525"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo"
+        app:layout_constraintVertical_bias="0.74"
+        app:layout_constraintWidth_percent="0.8" />
+
+    <Button
+        android:id="@+id/regbtn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:backgroundTint="#FFFFFF"
+        android:fontFamily="@font/muli_black"
+        android:gravity="center"
+        android:text="@string/signup"
+        android:textColor="#E45022"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:cornerRadius="17dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.08"
+        app:layout_constraintHorizontal_bias="0.525"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logbtn"
+        app:layout_constraintWidth_percent="0.8" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
