@@ -43,12 +43,6 @@ public class CartViewModel extends AndroidViewModel {
     }
 
 
-//    @BindingAdapter("android:text")
-//    public void setItemsTotal(Double itemsTotal) {
-//        this.itemsTotal = itemsTotal;
-//    }
-
-
     @BindingAdapter("android:text")
     public static void setBasketTotal(TextView textView , double basketTotal) {
         Log.d("updatedBasket" , String.valueOf(basketTotal));
