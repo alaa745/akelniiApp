@@ -18,7 +18,7 @@ import java.util.List;
 public class CartViewModel extends AndroidViewModel {
     private Repository repository;
     private LiveData<List<Cart>> carts;
-    private MutableLiveData<Double> basketTotal;
+    private MutableLiveData<Double> basketTotal = new MutableLiveData<>();
     private final static MutableLiveData<Double> itemsTotal = new MutableLiveData<>();
     private final double DELIVERY = 10.0;
     private final double TAX = 0.0;
@@ -50,7 +50,7 @@ public class CartViewModel extends AndroidViewModel {
 
 
     @BindingAdapter("android:text")
-    public void setBasketTotal(TextView textView , double basketTotal) {
+    public static void setBasketTotal(TextView textView , double basketTotal) {
         Log.d("updatedBasket" , String.valueOf(basketTotal));
     }
 
