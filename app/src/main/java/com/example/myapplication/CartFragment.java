@@ -99,6 +99,13 @@ public class CartFragment extends Fragment {
                 binding.itemsText.setText(String.valueOf(newItemsTotal.doubleValue()));
             }
         });
+
+        cartViewModel.getBasketTotal().observe(getViewLifecycleOwner(), new Observer<Double>() {
+            @Override
+            public void onChanged(Double newBasketTotal) {
+                binding.TotalPrice.setText(String.valueOf(newBasketTotal));
+            }
+        });
         promoCode.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
