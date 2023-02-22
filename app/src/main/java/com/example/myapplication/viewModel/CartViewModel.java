@@ -49,8 +49,8 @@ public class CartViewModel extends AndroidViewModel {
 //    }
 
 
-    public void setBasketTotal(MutableLiveData<Double> basketTotal) {
-        this.basketTotal = basketTotal;
+    public void setBasketTotal(TextView textView , double basketTotal) {
+        Log.d("updatedBasket" , String.valueOf(basketTotal));
     }
 
     public MutableLiveData<Double> getBasketTotal() {
